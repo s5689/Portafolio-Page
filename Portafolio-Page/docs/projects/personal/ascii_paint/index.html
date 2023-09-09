@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASCII Pain(t)</title>
+
+    <script type="module" crossorigin src="/Portafolio-Page/docs/projects/personal/ascii_paint/assets/main-6b78525a.js"></script>
+    <link rel="stylesheet" href="/Portafolio-Page/docs/projects/personal/ascii_paint/assets/index-9eed1827.css" />
+  </head>
+
+  <body>
+    <div id="panel-left">
+      <select id="char-selector"></select>
+      <div id="char-picker"></div>
+    </div>
+
+    <div id="panel-top">
+      <div id="char-preview"></div>
+      <div id="color-picker"></div>
+
+      <div id="tool-picker">
+        <div id="tool-picker-top"></div>
+
+        <div id="tool-picker-bottom">
+          <button id="tool-pencil"></button>
+          <button id="tool-eraser"></button>
+          <button id="tool-fill"></button>
+          <button id="tool-zoom"></button>
+          <button id="tool-move"></button>
+        </div>
+      </div>
+    </div>
+
+    <div id="panel-right">
+      <div id="history"></div>
+
+      <form id="set-canvas-size">
+        <label>Tamaño del Lienzo</label>
+        <span>X:</span>
+        <input id="x" type="number" autocomplete="off" required />
+
+        <span>Y:</span>
+        <input id="y" type="number" autocomplete="off" required />
+
+        <button>Aplicar</button>
+      </form>
+
+      <div id="layer-options">
+        <div id="layer-options-header">
+          <input type="range" id="transparency" value="0" min="0" max="100" step="10" />
+          <span id="transparency-value">0%</span>
+
+          <button id="add-layer">+</button>
+        </div>
+
+        <div id="layers-options-container"></div>
+      </div>
+    </div>
+
+    <div id="canvas" draggable="false">
+      <table id="preview-layer">
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- <button id="test">aaaaaaaaaaaaaaaaaa</button> -->
+  </body>
+</html>
+
+<!-- Go Back Button -->
+<style>
+  #goBack {
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 192.5px;
+    height: 47px;
+
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 5px black;
+
+    user-select: none;
+    cursor: pointer;
+
+    z-index: 9999;
+    filter: invert(1);
+    transition: filter 500ms, font-weight 500ms;
+  }
+
+  #goBack:hover {
+    filter: invert(0);
+  }
+
+  #goBack img {
+    position: relative;
+    top: 11px;
+    left: 8px;
+    width: 25px;
+
+    transform: rotate(90deg);
+  }
+
+  #goBack p {
+    position: relative;
+    top: -33px;
+    left: 38px;
+  }
+</style>
+
+<div id="goBack" onclick="document.location.href = '/Portafolio-Page/docs/?prev=2'">
+  <img src="/Portafolio-Page/docs/assets/arrow.gif" />
+  <p>Volver al Portafolio</p>
+</div>
