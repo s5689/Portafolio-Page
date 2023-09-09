@@ -1,0 +1,67 @@
+{
+  "icons": [
+    {
+      "src": "/Portafolio-Page/projects/laboral/dados/icon_180x180.eb18ddffa64e403c779f5e7c91103900.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/Portafolio-Page/projects/laboral/dados/icon_167x167.82ecce0d78bc45f2dea0404f8dd29e72.png",
+      "sizes": "167x167",
+      "type": "image/png"
+    },
+    {
+      "src": "/Portafolio-Page/projects/laboral/dados/icon_152x152.6f8e26600a9700bd0ad8a2d0a3eb6fcd.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/Portafolio-Page/projects/laboral/dados/icon_120x120.f893b279bf739902755c05ac8be488f5.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
+      "src": "/Portafolio-Page/projects/laboral/dados/icon_512x512.8e021b25c54e324dbf7ed28d9468435e.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/Portafolio-Page/projects/laboral/dados/icon_384x384.e4da380e77088b14d8d9ab312dc8ad8a.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/Portafolio-Page/projects/laboral/dados/icon_192x192.a18d25af47193145e949ea40d258d85a.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/Portafolio-Page/projects/laboral/dados/icon_144x144.1e4b9cd4e285875e59398594a20e8a76.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/Portafolio-Page/projects/laboral/dados/icon_128x128.94ab424e56d640fb9b8d5b9392744cb4.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/Portafolio-Page/projects/laboral/dados/icon_96x96.7a824c24c38291773422b27c20891e9a.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/Portafolio-Page/projects/laboral/dados/icon_72x72.28fe90d9c7bf23f554d29e4d0afd8213.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    }
+  ],
+  "name": "React Boilerplate",
+  "short_name": "React BP",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "My React Boilerplate-based project!",
+  "background_color": "#fafafa",
+  "theme_color": "#b1624d"
+}
