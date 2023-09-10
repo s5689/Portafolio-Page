@@ -14,8 +14,8 @@
     <script src="./js/main.js"></script>
 
     <title>Bingo</title>
-    
-    <link rel="stylesheet" href="/Portafolio-Page/assets/index-6ad328a3.css">
+
+    <link rel="stylesheet" href="/Portafolio-Page/assets/index-6ad328a3.css" />
   </head>
 
   <body>
@@ -96,9 +96,41 @@
     top: -33px;
     left: 38px;
   }
+
+  #goBackAnimation {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    opacity: 0;
+    background-color: black;
+    z-index: 99999;
+
+    transition: opacity 500ms;
+  }
 </style>
 
-<div id="goBack" onclick="document.location.href = '/Portafolio-Page/?prev=4'">
-  <img src="/Portafolio-Page/assets/arrow-ed4d7149.gif" />
+<script>
+  function goMenu(e) {
+    const div = document.getElementById('goBackAnimation');
+    div.style.display = 'block';
+
+    setTimeout(() => {
+      div.style.opacity = 1;
+    }, 1);
+
+    setTimeout(() => {
+      document.location.href = `/?prev=${e}`;
+    }, 600);
+  }
+</script>
+
+<div id="goBack" onclick="goMenu(4)">
+  <img src="/assets/arrow.gif" />
   <p>Volver al Portafolio</p>
 </div>
+
+<div id="goBackAnimation"></div>

@@ -905,7 +905,23 @@
   }
 </style>
 
-<div id="goBack" onclick="document.location.href = '/Portafolio-Page/?prev=0'">
-  <img src="/Portafolio-Page/assets/arrow-ed4d7149.gif" />
+<script>
+  function goMenu(e) {
+    const div = document.querySelector('body');
+
+    div.style.transition = 'opacity 500ms';
+
+    setTimeout(() => {
+      div.style.opacity = 0;
+    }, 100);
+
+    setTimeout(() => {
+      document.location.href = `/?prev=${e}`;
+    }, 600);
+  }
+</script>
+
+<div id="goBack" onclick="goMenu(0)">
+  <img src="/assets/arrow.gif" />
   <p>Volver al Portafolio</p>
 </div>
